@@ -1,0 +1,248 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fbfafc;
+    margin: 0 0;
+    overflow-x: hidden;
+}
+
+#naghi{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+.PHolder{
+    position: relative;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 200px;
+    letter-spacing: -5px;
+}
+
+.line{
+    position: absolute;
+    top: 50%;
+    margin-top: -125px;
+    left: 50%;
+    margin-left: -1px;
+    height: 250px;
+    width: 2px;
+    background-color: black;
+    animation: flash 1.5s infinite;
+}
+
+.center{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 50%;
+    margin-top: -120px;
+    left: 50%;
+    transition-duration: 0;
+    transition-timing-function: ease-in-out;
+}
+
+
+@keyframes flash {
+    0%{opacity: 1;}
+    10%{opacity: 1;}
+    20%{opacity: 1;}
+    30%{opacity: 1;}
+    40%{opacity: 1;}
+    50%{opacity: 0;}
+    60%{opacity: 0;}
+    70%{opacity: 0;}
+    80%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.typing{
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -30px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+.circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #0080ff;
+    margin: 20px;
+    animation: typing 0.8s infinite;
+    transform: scale(0.7);
+}
+
+#cir2{animation-delay: 0.1s;}
+#cir3{animation-delay: 0.2s;}
+
+@keyframes typing{
+    0%{transform: scale(0.7);}
+    50%{transform: scale(1.0);}
+    100%{transform: scale(0.7);}
+}
+
+.hide{
+    display: none;
+}
+
+.note{
+    position: fixed;
+    color: black;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    bottom: 100px;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+#bio{
+    transition-duration: 6s;
+    left: 100%;
+    transition-timing-function: ease-out;
+}
+
+.bigP{
+    font-size: 150px;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+    margin-top: 0px;
+    white-space: nowrap;
+}
+
+#yes{
+    left: 100%;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#yoFake{
+    float: left;
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+    margin-top: 0px;
+    display: none;
+}
+
+.folioCon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    margin-top: -125px;
+    top: 50%;
+    text-align: center;
+    color:white;
+    font-size: 200px;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+}
+
+.workCon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background-color: #ffffff;
+}
+
+.workslide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workcell{
+    width: 80%;
+    height: 700px;
+    margin: 20%;
+    box-sizing: border-box;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.worktitle{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 200px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: -5px;
+    margin: 50px;
+}
+
+.worktxt{
+    width: 50%;
+    top: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+    padding: 100px;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 15px;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.catcell{
+    margin-right: 20px;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 25px;
+}
+
+.liner{
+    position: absolute;
+    width: 2px;
+    left: 50%;
+    margin-left: -1px;
+    height: 10%;
+    background-color: black;
+    top: 0px;
+}
